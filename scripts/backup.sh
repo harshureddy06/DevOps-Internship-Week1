@@ -4,8 +4,8 @@
 timestamp=$(date)
 
 
-mkdir backup_folder
-
 backup_folder=~/project_backup_$timestamp
 
-cp -r ~/project "backup_folder"
+mkdir "$backup_folder"
+
+cp -r ~/project "$backup_folder"
